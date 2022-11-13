@@ -6,6 +6,9 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -111,6 +114,25 @@ function App() {
             licensePlate: "BE33ER"
           }}
         />
+
+        <h1>Iteration 8</h1>
+        <div style={{display: "flex", flexDirection:"flex-row", gap: "16px", justifyContent: "center", margin: "8px"}}>
+          <LikeButton /> 
+          <LikeButton />
+        </div>
+
+        <h1>Iteration 9</h1>
+        <div style={{display: "flex", flexDirection:"flex-row", justifyContent: "center", margin: "8px"}}>
+          <ClickablePicture
+            img='maxence.png'
+            imgClicked='maxence-glasses.png'
+           /> 
+        </div>
+
+        <h1>Iteration 10</h1>
+        <div style={{display: "flex", flexDirection:"flex-row", justifyContent: "center", margin: "8px"}}>
+          <Dice /> 
+        </div>
     </div>
   );
 }
